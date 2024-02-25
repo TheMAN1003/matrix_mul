@@ -14,24 +14,12 @@
 #define ASSERT_NULL(ptr) ASSERT_TRUE(ptr == NULL)
 #define ASSERT_NOT_NULL(ptr) ASSERT_TRUE(ptr != NULL)
 
-
 extern float** createMatrix(uint32_t rows, uint32_t columns);
 extern void freeMatrix(float** matrix, uint32_t rows);
 
 extern bool isMultiplicable(uint32_t columns1, uint32_t rows2);
-extern bool floatEq(float a, float b, float prec);
+extern bool floatEq(float a, float b, float precision);
 
 extern float** multiplyMatrices(float** matrix1, float** matrix2, uint32_t rows1, uint32_t columns1, uint32_t rows2, uint32_t columns2);
-
-
-
-
-
-
-
-
-
-
-
 
 #endif //MATRIX_MUL_FLOATING_POINT_H
